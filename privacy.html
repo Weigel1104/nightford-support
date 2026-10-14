@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0a12" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f3eee3" media="(prefers-color-scheme: light)">
+<title>隐私政策 · 渡夜 Nightford</title>
+<meta name="description" content="《渡夜》（Nightford）隐私政策：本游戏不收集任何个人信息，游戏数据只保存在你的设备上。">
+<link rel="alternate" hreflang="zh-Hans" href="privacy.html">
+<link rel="alternate" hreflang="zh-Hant" href="zh-Hant/privacy.html">
+<link rel="alternate" hreflang="en" href="en/privacy.html">
+<link rel="alternate" hreflang="x-default" href="privacy.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0a12'/%3E%3Ccircle cx='20' cy='12' r='6' fill='%23eadfbf'/%3E%3Cpath d='M0 26c6-5 10-7 15-4s9 2 17-3v13H0z' fill='%23b8372d'/%3E%3C/svg%3E">
+<style>*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#0b0a12;--bg-top:#1a1428;--panel:#130f1c;--edge:#2c2340;--ink:#efe7d8;--mute:#b3a8c2;--rule:#2b2339;
+  --accent:#e8c167;--link:#f2d27e;--seal:#b8372d;--seal-ink:#fbeee0;--far:#221b31;--mid:#16111f;
+  --moon:#eadfbf;--glow:rgba(234,223,191,.22);--focus:#ffd76a;
+  --sans:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;--serif:"Songti SC","STSong","Noto Serif SC","Source Han Serif SC",serif;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:light){
+  :root{
+    --bg:#f3eee3;--bg-top:#e3dac8;--panel:#fbf8f1;--edge:#d9cfbd;--ink:#1f1b24;--mute:#565062;--rule:#ddd3c1;
+    --accent:#7a4f12;--link:#8f3416;--seal:#b0342a;--seal-ink:#fff6ea;--far:#d5cbb8;--mid:#c3b7a2;
+    --moon:#c9553f;--glow:rgba(201,85,63,.18);--focus:#8f3416;
+    color-scheme:light;
+  }
+}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 var(--sans);overflow-wrap:break-word}
+a{color:var(--link);text-underline-offset:.22em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:2px}
+.skip{position:absolute;left:-9999px;top:8px;z-index:9;padding:10px 14px;background:var(--panel);color:var(--ink);border:1px solid var(--edge);border-radius:4px}
+.skip:focus{left:16px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 16px}
+header.top{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--bg-top) 0%,var(--bg) 100%)}
+header.top::before{content:"";position:absolute;z-index:0;top:72px;right:max(20px,calc(50% - 21rem));width:64px;height:64px;border-radius:50%;
+  background:var(--moon);opacity:.88;box-shadow:0 0 48px 18px var(--glow)}
+.bar{position:relative;z-index:1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:0 12px;padding-top:6px}
+.bar ul,footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap}
+.bar a,footer nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;font-size:14px;color:var(--mute);text-decoration:none;border-radius:4px}
+.bar a:hover,footer nav a:hover{color:var(--ink)}
+.bar a[aria-current="page"],footer nav a[aria-current="page"]{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:8px}
+.lang li+li::before{content:"·";color:var(--mute);opacity:.6;align-self:center}
+.lang li{display:flex}
+.bar>nav:first-child{margin-left:-10px}.bar>.lang{margin-right:-10px}
+main:focus{outline:none}
+.toc{margin-top:32px}
+.summary{margin-top:28px}
+.brand{position:relative;z-index:1;display:flex;align-items:center;gap:16px;padding:22px 0 0}
+.seal{flex:none;writing-mode:vertical-rl;padding:10px 7px;border-radius:3px;background:var(--seal);color:var(--seal-ink);
+  font:700 21px/1 "Songti SC","Songti TC","Noto Serif SC",serif;letter-spacing:.14em;transform:rotate(-3deg);
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.2)}
+.name{margin:0;font:700 clamp(28px,7vw,40px)/1.15 var(--serif);letter-spacing:.08em}
+.name span{display:block;margin-top:6px;font:600 12px/1.4 var(--sans);letter-spacing:.38em;color:var(--mute)}
+.tag{margin:6px 0 0;font-size:14px;line-height:1.5;color:var(--mute)}
+h1{position:relative;z-index:1;margin:24px 0 0;padding-bottom:84px;font:700 clamp(24px,5vw,30px)/1.3 var(--serif);letter-spacing:.06em}
+svg.ink{position:absolute;left:0;bottom:-1px;display:block;width:100%;height:112px}
+@media (max-width:480px){svg.ink{height:84px}h1{padding-bottom:64px}}
+@media (max-width:374px){header.top::before{top:108px;right:16px;width:44px;height:44px;box-shadow:0 0 32px 12px var(--glow)}}
+.ink .far{fill:var(--far)}.ink .mid{fill:var(--mid)}.ink .near{fill:var(--bg)}
+main{padding:0 0 56px}
+.lead{margin:0;font-size:17px}
+.meta{margin:0 0 16px;font-size:14px;color:var(--mute)}
+section{margin-top:44px;scroll-margin-top:16px}
+h2{display:flex;align-items:center;gap:10px;margin:0 0 12px;font:700 20px/1.4 var(--serif);letter-spacing:.04em}
+h2::before{content:"";flex:none;width:6px;height:1.1em;border-radius:1px;background:var(--seal)}
+h3{margin:0 0 4px;font-size:16px;line-height:1.6;font-weight:700}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:1.4em}
+li{margin:4px 0}
+.facts{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.facts li{margin:0;padding:12px 14px;background:var(--panel);border:1px solid var(--edge);border-radius:6px;line-height:1.55}
+.facts b{display:block;margin-bottom:2px;font-size:13px;font-weight:600;color:var(--mute)}
+.qa{padding:16px 0;border-top:1px solid var(--rule)}
+.qa:first-of-type{border-top:0;padding-top:4px}
+.qa p:last-child{margin-bottom:0}
+.card{padding:18px 18px 6px;background:var(--panel);border:1px solid var(--edge);border-radius:6px}
+.summary{border-left:4px solid var(--seal)}
+.summary ul{padding-left:1.2em}
+.mail{margin:4px 0 14px;font-size:18px;font-weight:600;overflow-wrap:anywhere}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;margin:0 0 14px;border-radius:4px;
+  background:var(--seal);color:var(--seal-ink);font-weight:700;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.toc ol{margin:0;padding-left:1.6em;columns:2 15rem;column-gap:24px}
+.toc li{break-inside:avoid;margin:0;padding:3px 0}
+.tbl{overflow-x:auto;margin:0 0 12px;border:1px solid var(--edge);border-radius:6px}
+table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.6}
+caption{text-align:left;padding:10px 14px 0;font-size:14px;color:var(--mute)}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-top:1px solid var(--rule)}
+thead th{border-top:0;font-size:13px;font-weight:600;color:var(--mute)}
+td code{display:block;margin-top:2px}
+code{font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--mute);overflow-wrap:anywhere}
+footer{border-top:1px solid var(--rule);padding:20px 0 40px;font-size:14px;color:var(--mute)}
+footer nav{margin:0 -10px 8px}
+footer p{margin:0 0 6px}
+@media print{
+  header.top{background:none}header.top::before,svg.ink,.skip,.bar{display:none}
+  body{background:#fff;color:#000}h1{padding-bottom:0}.card,.facts li,.tbl{border-color:#999}a{color:#000}
+}</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="top">
+<div class="wrap">
+<div class="bar">
+<nav aria-label="网站"><ul>
+<li><a href="index.html">技术支持</a></li>
+<li><a href="privacy.html" aria-current="page">隐私政策</a></li>
+</ul></nav>
+<nav class="lang" aria-label="语言"><ul>
+<li><a href="privacy.html" lang="zh-Hans" hreflang="zh-Hans" aria-current="page">简体中文</a></li>
+<li><a href="zh-Hant/privacy.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li>
+<li><a href="en/privacy.html" lang="en" hreflang="en">English</a></li>
+</ul></nav>
+</div>
+<div class="brand">
+<span class="seal" aria-hidden="true">渡夜</span>
+<div>
+<p class="name">渡夜<span>NIGHTFORD</span></p>
+<p class="tag">像素武侠 · 连招肉鸽 · 夺魂印，破长夜</p>
+</div>
+</div>
+<h1>隐私政策</h1>
+</div>
+<svg class="ink" viewBox="0 0 1200 112" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="far" d="M0 70C80 46 140 22 210 38C270 52 320 6 400 16C470 26 520 60 600 50C680 40 720 0 800 12C880 24 930 58 1010 50C1080 43 1140 28 1200 36V112H0Z"/><path class="mid" d="M0 92C60 76 120 58 190 70C260 82 300 48 380 56C450 63 500 88 580 82C660 76 700 46 780 58C860 70 900 92 980 84C1060 76 1120 62 1200 70V112H0Z"/><path class="near" d="M0 112V102C90 92 160 99 240 95C340 90 400 103 500 100C600 97 680 88 760 95C860 103 940 96 1040 99C1110 101 1160 96 1200 97V112Z"/></svg>
+</header>
+<main id="main" class="wrap" tabindex="-1">
+<p class="meta">生效日期：2026 年 10 月 15 日</p>
+<p class="lead">本隐私政策说明 iOS 游戏《渡夜》（英文名 Nightford，以下简称「本游戏」）以及本支持网站如何对待你的信息。本游戏由个人开发者 Wang Wai Ng（以下简称「我们」）开发和发行。</p>
+<section id="summary" aria-labelledby="summary-h" class="card summary">
+<h2 id="summary-h">要点</h2>
+<ul>
+<li>本游戏不收集、不传输、不出售任何个人信息，也不追踪你。</li>
+<li>游戏进度和设置只保存在你的设备上，我们无法读取。</li>
+<li>没有账号、没有广告、没有统计分析，也不包含第三方追踪 SDK。</li>
+<li>删除 App 即可删除全部游戏数据。</li>
+</ul>
+</section>
+
+<nav class="toc card" aria-labelledby="toc-h">
+<h2 id="toc-h">目录</h2>
+<ol>
+  <li><a href="#s1">我们不收集的信息</a></li>
+  <li><a href="#s2">保存在你设备上的数据</a></li>
+  <li><a href="#s3">网络连接</a></li>
+  <li><a href="#s4">第三方服务与 SDK</a></li>
+  <li><a href="#s5">由 Apple 处理的信息</a></li>
+  <li><a href="#s6">你联系我们时</a></li>
+  <li><a href="#s7">本网站</a></li>
+  <li><a href="#s8">儿童隐私</a></li>
+  <li><a href="#s9">数据保留与删除</a></li>
+  <li><a href="#s10">你的权利</a></li>
+  <li><a href="#s11">政策变更</a></li>
+  <li><a href="#s12">联系我们</a></li>
+</ol>
+</nav>
+
+<section id="s1" aria-labelledby="s1-h">
+<h2 id="s1-h">1. 我们不收集的信息</h2>
+<p>本游戏不会收集你的个人信息，不会把它存储到任何服务器，也不会传输给任何人。这包括但不限于：姓名、电子邮件地址、电话号码、精确或大致位置、通讯录、照片、设备标识符（例如广告标识符 IDFA）、IP 地址、游玩行为数据，以及诊断或崩溃数据。</p>
+<p>本游戏不需要注册或登录，也不会请求相机、麦克风、位置、通讯录、照片、通知或「跟踪」等任何系统权限。</p>
+</section>
+
+<section id="s2" aria-labelledby="s2-h">
+<h2 id="s2-h">2. 保存在你设备上的数据</h2>
+<p>为了记住你的进度和设置，本游戏使用 App 内置网页视图的本机存储（localStorage）在你的设备上保存下列内容。这些数据只供游戏本身使用，不会离开你的设备，我们也无法访问。</p>
+<div class="tbl">
+<table>
+<caption>本游戏在你的设备上保存的数据（小字为本机存储项名称）</caption>
+<thead><tr><th scope="col">保存的内容</th><th scope="col">用途</th></tr></thead>
+<tbody>
+<tr><td><strong>战绩统计</strong>：冒险次数、通关次数、最佳层数、最快用时<code>nightford.stats</code></td><td>在主菜单和结算界面显示你的记录</td></tr>
+<tr><td><strong>上次选择的侠客</strong>：侠客编号<code>nightford.hero</code></td><td>下次打开时默认选中</td></tr>
+<tr><td><strong>长夜进度</strong>：已解锁的长夜等级、上次选择的等级、各侠客通关过的最高等级<code>nightford.ladder、nightford.ladderBest</code></td><td>解锁和显示难度</td></tr>
+<tr><td><strong>成就</strong>：已达成的成就标记<code>nightford.ach</code></td><td>显示成就</td></tr>
+<tr><td><strong>魂玉与藏经阁</strong>：魂玉余额、心法、已解锁的内容与配色<code>nightford.jade、nightford.meta</code></td><td>局外成长</td></tr>
+<tr><td><strong>图鉴</strong>：图鉴标记<code>nightford.codex</code></td><td>显示已解锁的图鉴条目</td></tr>
+<tr><td><strong>设置</strong>：音效开关、画面亮度<code>nightford.muted、nightford.bright</code></td><td>记住你的偏好</td></tr>
+</tbody>
+</table>
+</div>
+<p>未来版本可能增加新的本机存档项（例如中途存档或更多设置），它们同样只保存在你的设备上。</p>
+</section>
+
+<section id="s3" aria-labelledby="s3-h">
+<h2 id="s3-h">3. 网络连接</h2>
+<p>本游戏完全离线运行，不连接任何服务器，所有游戏内容都已打包在 App 内。只有当你在游戏的「关于」页点击「隐私政策」或「技术支持」时，才会用浏览器打开本网站；点击联系邮箱则会打开你的邮件 App。</p>
+</section>
+
+<section id="s4" aria-labelledby="s4-h">
+<h2 id="s4-h">4. 第三方服务与 SDK</h2>
+<p>本游戏不包含任何广告、统计分析、崩溃上报、社交登录或追踪 SDK。</p>
+<p>本游戏使用开源框架 Capacitor 将游戏打包为 iOS App，并使用其触感反馈插件在战斗中产生轻微震动。它们只在你的设备上运行，不收集也不传输数据。本游戏不进行 Apple「App 跟踪透明度」所定义的跟踪。</p>
+</section>
+
+<section id="s5" aria-labelledby="s5-h">
+<h2 id="s5-h">5. 由 Apple 处理的信息</h2>
+<p>你通过 App Store 下载和购买本游戏时，购买与付款信息由 Apple 按照 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>处理，我们无法获知你的身份或付款信息。</p>
+<p>如果你在 iPhone 上开启了「设置 › 隐私与安全性 › 分析与改进 › 与 App 开发者共享」，Apple 可能会向我们提供不含你个人身份信息的崩溃报告和使用统计。这项共享由 Apple 控制，你可以随时在设置中关闭。</p>
+</section>
+
+<section id="s6" aria-labelledby="s6-h">
+<h2 id="s6-h">6. 你联系我们时</h2>
+<p>如果你发邮件到 <a href="mailto:polaris.research2000@gmail.com">polaris.research2000@gmail.com</a>，我们会收到你的电子邮件地址，以及你主动提供的内容（例如设备型号或截图）。这些信息只用于回复你和解决问题，不会用于营销，也不会出售或提供给第三方，法律另有要求的除外。</p>
+<p>往来邮件保存在我们的邮箱中，问题处理完毕后不会保留超过必要的时间，你也可以随时要求我们删除。支持邮箱由 Gmail 提供，邮件存储在 Google 的服务器上（可能位于你所在国家或地区以外，例如美国），同时受 <a href="https://policies.google.com/privacy?hl=zh-CN">Google 隐私权政策</a>约束。</p>
+</section>
+
+<section id="s7" aria-labelledby="s7-h">
+<h2 id="s7-h">7. 本网站</h2>
+<p>本网站托管在 GitHub Pages，不使用 Cookie，也没有统计、广告或追踪脚本。GitHub 作为托管服务商，会出于安全目的记录并保存访问者的 IP 地址，详见 <a href="https://docs.github.com/pages/getting-started-with-github-pages/about-github-pages#data-collection">GitHub Pages 说明</a>和 <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>。</p>
+</section>
+
+<section id="s8" aria-labelledby="s8-h">
+<h2 id="s8-h">8. 儿童隐私</h2>
+<p>本游戏不收集任何人的个人信息，包括 13 岁以下的儿童。如果你是家长或监护人，并认为孩子曾通过邮件向我们提供了个人信息，请联系我们，我们会尽快删除。</p>
+</section>
+
+<section id="s9" aria-labelledby="s9-h">
+<h2 id="s9-h">9. 数据保留与删除</h2>
+<ul>
+<li><strong>设备上的游戏数据：</strong>删除 App 即可永久删除。如果你开启了 iCloud 云备份或电脑备份，备份中可能包含这些数据，由 iOS 的备份功能管理，你可以在设置中管理或删除备份。</li>
+<li><strong>邮件往来：</strong>发邮件要求删除即可。</li>
+</ul>
+<p>除此之外，我们没有保存任何关于你的数据，因此也没有可供查阅、导出或删除的服务器数据。</p>
+</section>
+
+<section id="s10" aria-labelledby="s10-h">
+<h2 id="s10-h">10. 你的权利</h2>
+<p>根据你所在地区的法律（例如欧盟《通用数据保护条例》（GDPR）或美国加州的消费者隐私法（CCPA/CPRA）），你可能享有访问、更正、删除个人信息以及反对处理等权利。由于本游戏不收集个人信息，我们通常并不持有你的数据；对于你通过邮件提供的信息，你可以随时联系我们行使上述权利。我们处理邮件的依据是回应你的请求（正当利益）。如果你认为我们对你个人信息的处理不当，也有权向你所在地的数据保护监管机构投诉。</p>
+<p>我们不会出售个人信息，也不会为跨情境行为广告而「共享」个人信息。</p>
+</section>
+
+<section id="s11" aria-labelledby="s11-h">
+<h2 id="s11-h">11. 政策变更</h2>
+<p>如果将来加入会处理数据的功能（例如 Game Center 排行榜与成就、iCloud 云存档），我们会在该版本发布前更新本政策和 App Store 上的隐私信息，并在本页更新生效日期。</p>
+</section>
+
+<section id="s12" aria-labelledby="s12-h">
+<h2 id="s12-h">12. 联系我们</h2>
+<p>对本政策有任何疑问，请联系：</p>
+<p>开发者：Wang Wai Ng（个人开发者）<br>电子邮件：<a href="mailto:polaris.research2000@gmail.com">polaris.research2000@gmail.com</a></p>
+<p>本政策提供简体中文、繁体中文和英文版本；各版本如有不一致，以简体中文版本为准。也可以访问<a href="index.html">技术支持</a>页面。</p>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<nav aria-label="页脚导航"><ul>
+<li><a href="index.html">技术支持</a></li>
+<li><a href="privacy.html" aria-current="page">隐私政策</a></li>
+</ul></nav>
+<p>本网站不使用 Cookie，也没有统计、广告或追踪脚本。</p>
+<p>&copy; 2026 Wang Wai Ng · 渡夜 Nightford</p>
+</div>
+</footer>
+</body>
+</html>
