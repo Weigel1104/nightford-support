@@ -133,7 +133,7 @@ footer p{margin:0 0 6px}
 <svg class="ink" viewBox="0 0 1200 112" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="far" d="M0 70C80 46 140 22 210 38C270 52 320 6 400 16C470 26 520 60 600 50C680 40 720 0 800 12C880 24 930 58 1010 50C1080 43 1140 28 1200 36V112H0Z"/><path class="mid" d="M0 92C60 76 120 58 190 70C260 82 300 48 380 56C450 63 500 88 580 82C660 76 700 46 780 58C860 70 900 92 980 84C1060 76 1120 62 1200 70V112H0Z"/><path class="near" d="M0 112V102C90 92 160 99 240 95C340 90 400 103 500 100C600 97 680 88 760 95C860 103 940 96 1040 99C1110 101 1160 96 1200 97V112Z"/></svg>
 </header>
 <main id="main" class="wrap" tabindex="-1">
-<p class="meta">生效日期：2026 年 10 月 15 日</p>
+<p class="meta">生效日期：2026 年 10 月 27 日</p>
 <p class="lead">本隐私政策说明 iOS 游戏《夜劍》（英文名 Nightford，以下简称「本游戏」）以及本支持网站如何对待你的信息。本游戏由个人开发者 Wang Wai Ng（以下简称「我们」）开发和发行。</p>
 <section id="summary" aria-labelledby="summary-h" class="card summary">
 <h2 id="summary-h">要点</h2>
@@ -141,6 +141,7 @@ footer p{margin:0 0 6px}
 <li>本游戏不收集、不传输、不出售任何个人信息，也不追踪你。</li>
 <li>游戏进度和设置只保存在你的设备上，我们无法读取。</li>
 <li>没有账号、没有广告、没有统计分析，也不包含第三方追踪 SDK。</li>
+<li>购买完整版由 Apple 处理，我们收不到你的账户和付款信息。</li>
 <li>删除 App 即可删除全部游戏数据。</li>
 </ul>
 </section>
@@ -167,6 +168,8 @@ footer p{margin:0 0 6px}
 <h2 id="s1-h">1. 我们不收集的信息</h2>
 <p>本游戏不会收集你的个人信息，不会把它存储到任何服务器，也不会传输给任何人。这包括但不限于：姓名、电子邮件地址、电话号码、精确或大致位置、通讯录、照片、设备标识符（例如广告标识符 IDFA）、IP 地址、游玩行为数据，以及诊断或崩溃数据。</p>
 <p>本游戏不需要注册或登录，也不会请求相机、麦克风、位置、通讯录、照片、通知或「跟踪」等任何系统权限。</p>
+<p>你在游戏里购买或恢复完整版时，交易在你的设备和 Apple 之间完成。我们收不到你的 Apple 账户、付款方式或其他个人信息，详见第 3、5 节。</p>
+<p>上面说的是正式版。通过 TestFlight 发放的测试版另有一份只存在本机的测试记录，见第 2 节；参加测试时 Apple 提供给我们的信息见第 5 节。</p>
 </section>
 
 <section id="s2" aria-labelledby="s2-h">
@@ -177,34 +180,39 @@ footer p{margin:0 0 6px}
 <caption>本游戏在你的设备上保存的数据（小字为本机存储项名称）</caption>
 <thead><tr><th scope="col">保存的内容</th><th scope="col">用途</th></tr></thead>
 <tbody>
-<tr><td><strong>战绩统计</strong>：冒险次数、通关次数、最佳层数、最快用时<code>nightford.stats</code></td><td>在主菜单和结算界面显示你的记录</td></tr>
-<tr><td><strong>上次选择的侠客</strong>：侠客编号<code>nightford.hero</code></td><td>下次打开时默认选中</td></tr>
-<tr><td><strong>长夜进度</strong>：已解锁的长夜等级、上次选择的等级、各侠客通关过的最高等级<code>nightford.ladder、nightford.ladderBest</code></td><td>解锁和显示难度</td></tr>
-<tr><td><strong>成就</strong>：已达成的成就标记<code>nightford.ach</code></td><td>显示成就</td></tr>
-<tr><td><strong>魂玉与藏经阁</strong>：魂玉余额、心法、已解锁的内容与配色<code>nightford.jade、nightford.meta</code></td><td>局外成长</td></tr>
-<tr><td><strong>图鉴</strong>：图鉴标记<code>nightford.codex</code></td><td>显示已解锁的图鉴条目</td></tr>
-<tr><td><strong>设置</strong>：音效开关、画面亮度<code>nightford.muted、nightford.bright</code></td><td>记住你的偏好</td></tr>
+<tr><td><strong>游戏进度</strong>：英雄的等级与经验、职业与技能、行装与材料、剧情和人物交情、魂玉与心法、已解锁的内容<code>nightford.meta、nightford.meta4、nightford.jade、nightford.replay、nightford.camp</code></td><td>保存你的进度，下次打开接着玩</td></tr>
+<tr><td><strong>战绩与长夜</strong>：冒险次数、通关次数、最佳成绩、上次选择的英雄、已解锁的长夜等级和每一级第一次走完的记录<code>nightford.stats、nightford.hero、nightford.ladder、nightford.ladderBest</code></td><td>显示你的记录，解锁和显示难度</td></tr>
+<tr><td><strong>图鉴与成就</strong>：图鉴条目、成就、深渊裂隙的进出次数<code>nightford.codex、nightford.ach、nightford.abyss</code></td><td>显示已解锁的条目和成就</td></tr>
+<tr><td><strong>提示与兵器记录</strong>：哪些教学提示已经看过、最近 40 局用过的兵器<code>nightford.armsSeen、nightford.armsTip、nightford.armsCard、nightford.armsLog、nightford.forkHint、nightford.poiseTip、nightford.rateTip、nightford.inkRuns</code></td><td>同一条提示不重复出现</td></tr>
+<tr><td><strong>设置</strong>：语言、音乐 / 音效 / 配音的开关与音量、画面亮度与画质、特效和震屏强度、按键布局<code>nightford.lang、nightford.muted、nightford.musicVol、nightford.sfxVol、nightford.voice、nightford.bright、nightford.gfx、nightford.gfxAuto、nightford.vfx、nightford.shake、nightford.hudLay</code></td><td>记住你的偏好</td></tr>
+<tr><td><strong>完整版状态</strong>：是否已解锁完整版<code>nightford.unlock、nightford.iap</code></td><td>没有网络时也记得你已购买</td></tr>
 </tbody>
 </table>
 </div>
-<p>未来版本可能增加新的本机存档项（例如中途存档或更多设置），它们同样只保存在你的设备上。</p>
+<p><strong>测试版的测试记录：</strong>只有通过 TestFlight 发放的测试版，会在你的设备上额外记下最近 200 局的对局摘要，例如英雄、等级、难度、倒在哪一间、用时、各个按键按了几次，存储项为 <code>nightford.tele、nightford.tele.cur</code>。这份记录不联网，也不会自动上传；只有你在设置里点「导出测试记录」，再选择复制或分享，它才会离开你的设备，发给谁由你决定。正式版不记录这些内容。</p>
+<p>未来版本可能增加新的本机存档项，它们同样只保存在你的设备上。</p>
 </section>
 
 <section id="s3" aria-labelledby="s3-h">
 <h2 id="s3-h">3. 网络连接</h2>
-<p>本游戏完全离线运行，不连接任何服务器，所有游戏内容都已打包在 App 内。只有当你在游戏的「关于」页点击「隐私政策」或「技术支持」时，才会用浏览器打开本网站；点击联系邮箱则会打开你的邮件 App。</p>
+<p>本游戏的玩法完全离线，所有游戏内容都已打包在 App 内。游戏不连接任何属于我们的服务器，我们也没有服务器。</p>
+<p>你购买或恢复完整版时，iOS 会通过 Apple 的 StoreKit 连接 App Store 服务器；游戏确认购买状态时，iOS 也可能这样连接。这些连接由 Apple 处理，我们收不到其中的内容。</p>
+<p>只有当你在游戏的「关于」页点击「隐私政策」或「技术支持」时，才会用浏览器打开本网站；点击联系邮箱则会打开你的邮件 App。</p>
 </section>
 
 <section id="s4" aria-labelledby="s4-h">
 <h2 id="s4-h">4. 第三方服务与 SDK</h2>
 <p>本游戏不包含任何广告、统计分析、崩溃上报、社交登录或追踪 SDK。</p>
 <p>本游戏使用开源框架 Capacitor 将游戏打包为 iOS App，并使用其触感反馈插件在战斗中产生轻微震动。它们只在你的设备上运行，不收集也不传输数据。本游戏不进行 Apple「App 跟踪透明度」所定义的跟踪。</p>
+<p>App 内购买通过 Apple 的 StoreKit 框架完成。游戏里用来调用 StoreKit 的组件只在你的设备上运行，不收集数据，也不向我们或其他第三方传输数据。</p>
 </section>
 
 <section id="s5" aria-labelledby="s5-h">
 <h2 id="s5-h">5. 由 Apple 处理的信息</h2>
-<p>你通过 App Store 下载和购买本游戏时，购买与付款信息由 Apple 按照 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>处理，我们无法获知你的身份或付款信息。</p>
+<p>你通过 App Store 下载本游戏，或在游戏里购买、恢复完整版时，购买与付款信息由 Apple 按照 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>处理，我们无法获知你的身份或付款信息。Apple 给我们的销售报告只有购买数量这类汇总数字，不含能识别你的信息。</p>
+<p>家人共享和退款也由 Apple 处理。退款请到 <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> 申请。</p>
 <p>如果你在 iPhone 上开启了「设置 › 隐私与安全性 › 分析与改进 › 与 App 开发者共享」，Apple 可能会向我们提供不含你个人身份信息的崩溃报告和使用统计。这项共享由 Apple 控制，你可以随时在设置中关闭。</p>
+<p><strong>参加 TestFlight 测试时：</strong>Apple 会按照 <a href="https://www.apple.com/legal/internet-services/testflight/">TestFlight 条款</a>向我们提供测试相关的信息：通过邮件邀请加入时，包括你的姓名和电子邮件地址（通过公开链接加入时不提供）；你安装和打开测试版的次数；你主动发送的反馈（截图和文字）；以及崩溃报告（含设备型号、系统版本等）。这些信息只用于改进本游戏，测试结束后不会保留超过必要的时间。</p>
 </section>
 
 <section id="s6" aria-labelledby="s6-h">
@@ -227,6 +235,7 @@ footer p{margin:0 0 6px}
 <h2 id="s9-h">9. 数据保留与删除</h2>
 <ul>
 <li><strong>设备上的游戏数据：</strong>删除 App 即可永久删除。如果你开启了 iCloud 云备份或电脑备份，备份中可能包含这些数据，由 iOS 的备份功能管理，你可以在设置中管理或删除备份。</li>
+<li><strong>测试版的测试记录：</strong>在设置里点「导出测试记录」→「清除测试记录」，或删除 App。</li>
 <li><strong>邮件往来：</strong>发邮件要求删除即可。</li>
 </ul>
 <p>除此之外，我们没有保存任何关于你的数据，因此也没有可供查阅、导出或删除的服务器数据。</p>

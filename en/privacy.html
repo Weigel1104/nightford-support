@@ -133,7 +133,7 @@ footer p{margin:0 0 6px}
 <svg class="ink" viewBox="0 0 1200 112" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="far" d="M0 70C80 46 140 22 210 38C270 52 320 6 400 16C470 26 520 60 600 50C680 40 720 0 800 12C880 24 930 58 1010 50C1080 43 1140 28 1200 36V112H0Z"/><path class="mid" d="M0 92C60 76 120 58 190 70C260 82 300 48 380 56C450 63 500 88 580 82C660 76 700 46 780 58C860 70 900 92 980 84C1060 76 1120 62 1200 70V112H0Z"/><path class="near" d="M0 112V102C90 92 160 99 240 95C340 90 400 103 500 100C600 97 680 88 760 95C860 103 940 96 1040 99C1110 101 1160 96 1200 97V112Z"/></svg>
 </header>
 <main id="main" class="wrap" tabindex="-1">
-<p class="meta">Effective date: October 15, 2026</p>
+<p class="meta">Effective date: October 27, 2026</p>
 <p class="lead">This Privacy Policy explains how the iOS game Nightford (<span lang="zh-Hant">夜劍</span>; the &ldquo;Game&rdquo;) and this support website treat your information. The Game is developed and published by independent developer Wang Wai Ng (&ldquo;we&rdquo;, &ldquo;us&rdquo;).</p>
 <section id="summary" aria-labelledby="summary-h" class="card summary">
 <h2 id="summary-h">Summary</h2>
@@ -141,6 +141,7 @@ footer p{margin:0 0 6px}
 <li>The Game does not collect, transmit or sell any personal information, and it does not track you.</li>
 <li>Your progress and settings are stored only on your device. We cannot read them.</li>
 <li>No accounts, no ads, no analytics, and no third-party tracking SDKs.</li>
+<li>Full game purchases are handled by Apple. We never receive your account or payment details.</li>
 <li>Deleting the app deletes all game data.</li>
 </ul>
 </section>
@@ -167,6 +168,8 @@ footer p{margin:0 0 6px}
 <h2 id="s1-h">1. Information we do not collect</h2>
 <p>The Game does not collect your personal information, store it on any server, or transmit it to anyone. This includes, without limitation: your name, email address, phone number, precise or approximate location, contacts, photos, device identifiers (such as the advertising identifier, IDFA), IP address, gameplay or usage data, and diagnostic or crash data.</p>
 <p>The Game requires no sign-up or login, and it does not request any system permission such as camera, microphone, location, contacts, photos, notifications or tracking.</p>
+<p>When you buy or restore the full game, the transaction takes place between your device and Apple. We do not receive your Apple Account, payment method or any other personal information. See sections 3 and 5.</p>
+<p>The above describes the released version. Test builds distributed through TestFlight also keep a test log that stays on your device (see section 2), and Apple shares some tester information with us (see section 5).</p>
 </section>
 
 <section id="s2" aria-labelledby="s2-h">
@@ -177,34 +180,39 @@ footer p{margin:0 0 6px}
 <caption>Data the game stores on your device (local storage key names shown in small type)</caption>
 <thead><tr><th scope="col">What is stored</th><th scope="col">Why</th></tr></thead>
 <tbody>
-<tr><td><strong>Run stats</strong>: Runs played, wins, deepest floor, fastest clear<code>nightford.stats</code></td><td>Show your records on the main menu and results screen</td></tr>
-<tr><td><strong>Last selected hero</strong>: Hero number<code>nightford.hero</code></td><td>Pre-select it next time</td></tr>
-<tr><td><strong>Long Night progress</strong>: Highest unlocked and last selected Long Night level; best level cleared per hero<code>nightford.ladder, nightford.ladderBest</code></td><td>Unlock and display difficulty levels</td></tr>
-<tr><td><strong>Achievements</strong>: Which achievements you have earned<code>nightford.ach</code></td><td>Show achievements</td></tr>
-<tr><td><strong>Soul Jade &amp; Scripture Pavilion</strong>: Soul Jade balance, Inner Arts, unlocked content and color schemes<code>nightford.jade, nightford.meta</code></td><td>Between-run progression</td></tr>
-<tr><td><strong>Codex</strong>: Codex flags<code>nightford.codex</code></td><td>Show unlocked codex entries</td></tr>
-<tr><td><strong>Settings</strong>: Sound on/off, screen brightness<code>nightford.muted, nightford.bright</code></td><td>Remember your preferences</td></tr>
+<tr><td><strong>Game progress</strong>: Hero levels and experience, classes and skills, gear and materials, story and friendship progress, Soul Jade and Inner Arts, unlocked content<code>nightford.meta, nightford.meta4, nightford.jade, nightford.replay, nightford.camp</code></td><td>Save your progress so you can pick up where you left off</td></tr>
+<tr><td><strong>Records and the Long Night</strong>: Runs played, wins, best results, last hero you picked, unlocked Long Night levels and when you first cleared each one<code>nightford.stats, nightford.hero, nightford.ladder, nightford.ladderBest</code></td><td>Show your records; unlock and show difficulty levels</td></tr>
+<tr><td><strong>Codex and achievements</strong>: Codex entries, achievements, how often you entered the Deep Rift<code>nightford.codex, nightford.ach, nightford.abyss</code></td><td>Show unlocked entries and achievements</td></tr>
+<tr><td><strong>Tips and weapon history</strong>: Which tutorial tips you have seen, weapons used in your last 40 runs<code>nightford.armsSeen, nightford.armsTip, nightford.armsCard, nightford.armsLog, nightford.forkHint, nightford.poiseTip, nightford.rateTip, nightford.inkRuns</code></td><td>Avoid showing the same tip twice</td></tr>
+<tr><td><strong>Settings</strong>: Language, music / sound / voice on-off and volume, brightness and graphics quality, effects and screen shake, button layout<code>nightford.lang, nightford.muted, nightford.musicVol, nightford.sfxVol, nightford.voice, nightford.bright, nightford.gfx, nightford.gfxAuto, nightford.vfx, nightford.shake, nightford.hudLay</code></td><td>Remember your preferences</td></tr>
+<tr><td><strong>Full game status</strong>: Whether you have unlocked the full game<code>nightford.unlock, nightford.iap</code></td><td>Remember your purchase when you are offline</td></tr>
 </tbody>
 </table>
 </div>
-<p>Future versions may add new on-device save data (for example a mid-run save or more settings). It will likewise be stored only on your device.</p>
+<p><strong>Test log in test builds:</strong> Only test builds distributed through TestFlight also record a short summary of your last 200 runs on your device, such as hero, level, difficulty, the room where you fell, run time and how many times each button was pressed. It is stored as <code>nightford.tele, nightford.tele.cur</code>. The log never goes online and is never uploaded automatically. It only leaves your device if you tap <em>Export test log</em> in Settings and choose to copy or share it, and you decide who receives it. The released version does not record any of this.</p>
+<p>Future versions may add new on-device save data. It will likewise be stored only on your device.</p>
 </section>
 
 <section id="s3" aria-labelledby="s3-h">
 <h2 id="s3-h">3. Network connections</h2>
-<p>The Game runs entirely offline and does not connect to any server; all game content is bundled inside the app. The only time this website opens is when you tap &ldquo;Privacy Policy&rdquo; or &ldquo;Support&rdquo; on the in-game About screen, which opens your browser. Tapping the contact email opens your mail app.</p>
+<p>The gameplay is entirely offline, and all game content is bundled inside the app. The Game does not connect to any server of ours, and we do not run any servers.</p>
+<p>When you buy or restore the full game, iOS connects to Apple&rsquo;s App Store servers through Apple&rsquo;s StoreKit. iOS may also do this when the Game checks your purchase status. Apple handles these connections, and we receive none of their contents.</p>
+<p>The only time this website opens is when you tap &ldquo;Privacy Policy&rdquo; or &ldquo;Support&rdquo; on the in-game About screen, which opens your browser. Tapping the contact email opens your mail app.</p>
 </section>
 
 <section id="s4" aria-labelledby="s4-h">
 <h2 id="s4-h">4. Third-party services and SDKs</h2>
 <p>The Game contains no advertising, analytics, crash-reporting, social-login or tracking SDKs.</p>
 <p>The Game uses the open-source Capacitor framework to package the game as an iOS app, and its haptics plug-in to produce light vibrations during combat. Both run only on your device and neither collects nor transmits data. The Game does not engage in tracking as defined by Apple&rsquo;s App Tracking Transparency.</p>
+<p>In-app purchases go through Apple&rsquo;s StoreKit framework. The component the Game uses to call StoreKit runs only on your device. It does not collect data or transmit data to us or any other third party.</p>
 </section>
 
 <section id="s5" aria-labelledby="s5-h">
 <h2 id="s5-h">5. Information handled by Apple</h2>
-<p>When you download and purchase the Game from the App Store, purchase and payment information is handled by Apple under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. We never see your identity or payment details.</p>
+<p>When you download the Game from the App Store, or buy or restore the full game inside the Game, purchase and payment information is handled by Apple under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. We never see your identity or payment details. The sales reports Apple gives us contain only aggregate figures, such as the number of purchases, that do not identify you.</p>
+<p>Family Sharing and refunds are also handled by Apple. You can request a refund at <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</p>
 <p>If you have turned on <em>Settings &rsaquo; Privacy &amp; Security &rsaquo; Analytics &amp; Improvements &rsaquo; Share With App Developers</em> on your iPhone, Apple may share crash reports and usage statistics with us that do not identify you personally. This sharing is controlled by Apple and you can turn it off at any time in Settings.</p>
+<p><strong>If you join a TestFlight test:</strong> Under the <a href="https://www.apple.com/legal/internet-services/testflight/">TestFlight terms</a>, Apple shares test-related information with us: your name and email address if you were invited by email (not if you joined through a public link); how many times you installed and opened the test build; feedback you choose to send (screenshots and comments); and crash reports (including device model and OS version). We use this only to improve the Game and do not keep it longer than necessary after testing ends.</p>
 </section>
 
 <section id="s6" aria-labelledby="s6-h">
@@ -227,6 +235,7 @@ footer p{margin:0 0 6px}
 <h2 id="s9-h">9. Data retention and deletion</h2>
 <ul>
 <li><strong>Game data on your device:</strong> delete the app to permanently delete it. If you use iCloud Backup or computer backups, those backups may contain this data; they are managed by iOS and you can manage or delete them in Settings.</li>
+<li><strong>Test log in test builds:</strong> in Settings, tap <em>Export test log</em> &rsaquo; <em>Clear test log</em>, or delete the app.</li>
 <li><strong>Email correspondence:</strong> email us and ask us to delete it.</li>
 </ul>
 <p>Apart from this we hold no data about you, so there is no server-side data to access, export or delete.</p>
